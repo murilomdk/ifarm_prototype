@@ -1,12 +1,21 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import LoginPage from "./pages/LoginPage";
+import ProfileSignInPage from "./pages/ProfileSignInPage";
+import SignInFormPage from "./pages/SignInFormPage";
+import { useTheme, Provider as PaperProvider } from "react-native-paper";
+
 
 export default function App() {
+  const theme = useTheme();
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <PaperProvider theme={theme}>
+        <View>
+          {/*<LoginPage />*/}
+          {/*<ProfileSignInPage />*/}
+          <SignInFormPage />
+        </View>
+      </PaperProvider>
   );
 }
 
