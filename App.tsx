@@ -15,10 +15,10 @@ export default function App() {
         <ThemeInitilizer>
             <SafeAreaView style={styles.container}>
             {/*    <View>*/}
-                    {/*<LoginPage />*/}
+                    <LoginPage />
                     {/*<SignInFormPage/>*/}
                     {/*<ProfileSignInPage />*/}
-                    <NewNegotiationPage/>
+                    {/*<NewNegotiationPage/>*/}
                     {/*<ProfileSignInPage />*/}
                 {/*</View>*/}
             </SafeAreaView>
