@@ -14,5 +14,4 @@ export const theme = {
         disabled: '#D0D0D0',
         error: '#f10505',
     },
-
 };

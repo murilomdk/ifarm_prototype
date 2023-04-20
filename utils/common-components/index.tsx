@@ -1,4 +1,4 @@
 export * from './components/CustomButton'
-export * from './components/CustomText'
+export * from './components/CustomTitle'
 
 

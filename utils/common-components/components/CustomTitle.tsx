@@ -3,14 +3,13 @@ import {Text} from "react-native-paper";
 
 interface Props {
     text: string;
-    bgColor: any;
+    color: any;
 }
 
-
-export const CustomText : React.FC<Props> = ({ text, bgColor }) => {
+export const CustomTitle : React.FC<Props> = ({ text, color }) => {
 
     return (
-        <Text style={{backgroundColor: bgColor}}>
+        <Text variant="titleLarge" style={{color: color}}>
             {text}
         </Text>
     );

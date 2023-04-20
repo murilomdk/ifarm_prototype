@@ -3,6 +3,7 @@ import SignInFormPage from "./pages/SignInFormPage";
 import {useTheme} from "react-native-paper";
 import {ThemeInitilizer} from './utils/styles/ThemingProvider';
 import ProfileSignInPage from "./pages/ProfileSignInPage";
+import LoginPage from "./pages/LoginPage";
 
 
 export default function App() {
@@ -11,8 +12,9 @@ export default function App() {
 
         <ThemeInitilizer>
             <View>
+                <LoginPage />
                 {/*<SignInFormPage/>*/}
-                <ProfileSignInPage />
+                {/*<ProfileSignInPage />*/}
             </View>
         </ThemeInitilizer>
     );
