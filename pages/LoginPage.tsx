@@ -1,5 +1,7 @@
 import { Button, Text, TextInput } from "react-native-paper";
 import { Image, View } from "react-native";
+import {CustomTitle} from "../utils/common-components";
+
 export default function LoginPage() {
   return (
     <View style={{ margin: 20 }}>
@@ -7,12 +9,11 @@ export default function LoginPage() {
         source={require("../assets/logo-ifarm.png")}
         style={{ alignSelf: "center" }}
       ></Image>
-      <Text
-        variant="headlineLarge"
-        style={{ textAlign: "center", marginTop: 76 }}
+      <CustomTitle
+        style={{ marginTop: 76 }}
+        text="Seja bem-vindo"
       >
-        Seja bem-vindo
-      </Text>
+      </CustomTitle>
       <Text variant="titleLarge" style={{ textAlign: "center", marginTop: 20 }}>
         Faca login e comece a vender seus produtos agora mesmo.
       </Text>
