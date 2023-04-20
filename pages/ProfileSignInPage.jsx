@@ -1,42 +1,39 @@
 import { Image, View } from "react-native";
-import { Text } from "react-native-paper";
+import {CustomLabel, CustomSubtitle, CustomTitle} from "../utils/common-components";
+import {theme} from "../utils/styles/theme";
 
 export default function ProfileSignInPage() {
   return (
-    <View style={{ marginVertical: 80 }}>
-      <Text variant="headlineMedium" style={{ textAlign: "center" }}>
-        Cadastro
-      </Text>
-      <Text variant="labelLarge" style={{ textAlign: "center", marginTop: 20 }}>
-        Escolha uma opcao para prosseguir
-      </Text>
+    <View>
+      <CustomTitle text="Cadastro" />
+      <CustomSubtitle variant="titleLarge" text={description} style={{ marginTop: 20 }} />
       <View style={cardStyle}>
         <Image
           source={require("../assets/signin-tractor.png")}
           style={{ alignSelf: "center", marginTop: 30 }}
         ></Image>
-        <Text
-          variant="labelSmall"
-          style={{ textAlign: "center", marginTop: 30 }}
-        >
-          Produtor rural
-        </Text>
+        <CustomLabel
+            variant="labelLarge"
+            text="Produtor rural"
+          style={{ textAlign: "center", marginTop: 30, fontWeight: 'bold' }}
+        />
       </View>
       <View style={cardStyle}>
         <Image
           source={require("../assets/signin-store.png")}
           style={{ alignSelf: "center", marginTop: 30 }}
         ></Image>
-        <Text
-          variant="labelSmall"
-          style={{ textAlign: "center", marginTop: 55 }}
-        >
-          Comerciante
-        </Text>
+        <CustomLabel
+            variant="labelLarge"
+            text="Comerciante"
+          style={{ textAlign: "center", marginTop: 55, fontWeight: 'bold' }}
+        />
       </View>
     </View>
   );
 }
+
+const description = 'Escolha uma opcao para ' + '\n' + 'prosseguir'
 
 const cardStyle = {
   marginTop: 50,
@@ -46,6 +43,6 @@ const cardStyle = {
   borderWidth: 1,
   borderStyle: "solid",
   borderRadius: 10,
-  borderColor: "#63B453",
-  backgroundColor: "#ebfdea",
+  borderColor: theme.colors.primary,
+  backgroundColor: theme.colors.backgroundSecondary,
 };

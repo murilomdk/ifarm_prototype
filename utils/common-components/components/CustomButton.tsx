@@ -17,8 +17,9 @@ export const CustomButton: React.FC<Props> = ({ mode = 'contained', onPress, tex
                 style={{...style,
                     backgroundColor: theme.colors.primary,
                     borderRadius: 10,
-                    height: 56,
-                    paddingTop: 8
+                    height: 46,
+                    width: 144,
+                    paddingTop: 2
         }}
                 labelStyle={{
                     textAlignVertical: "center",

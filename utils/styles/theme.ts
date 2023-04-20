@@ -7,7 +7,7 @@ export const theme = {
         ...DefaultTheme.colors,
         primary: '#63B453',
         backgroundPrimary: '#ffffff',
-        backgroundSecondary: 'rgba(99, 180, 83, 0.05)',
+        backgroundSecondary: '#F7FBF6',
         border: '#D0D0D0',
         textPrimary: '#27212B',
         textSecondary: '#939095',
