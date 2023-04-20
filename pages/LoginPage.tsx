@@ -9,11 +9,10 @@ export default function LoginPage() {
         source={require("../assets/logo-ifarm.png")}
         style={{ alignSelf: "center" }}
       ></Image>
-      <CustomTitle
-        style={{ marginTop: 76 }}
-        text="Seja bem-vindo"
-      >
-      </CustomTitle>
+        <CustomTitle
+            style={{ marginTop: 76 }}
+            text="Seja bem-vindo"
+        />
       <Text variant="titleLarge" style={{ textAlign: "center", marginTop: 20 }}>
         Faca login e comece a vender seus produtos agora mesmo.
       </Text>

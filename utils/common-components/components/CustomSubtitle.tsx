@@ -3,13 +3,13 @@ import {Text} from "react-native-paper";
 
 interface Props {
     text: string;
-    color?: any;
+    style: {}
 }
 
-export const CustomSubtitle : React.FC<Props> = ({ text, color = '#27212B' }) => {
+export const CustomSubtitle : React.FC<Props> = ({ text, style }) => {
 
     return (
-        <Text variant="headlineLarge" style={{color, textAlign: 'center'}}>
+        <Text variant="headlineLarge" style={{...style, textAlign: 'center', color: '#27212B'}}>
             {text}
         </Text>
     );
