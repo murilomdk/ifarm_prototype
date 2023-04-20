@@ -9,7 +9,7 @@ interface Props {
 export const CustomTitle : React.FC<Props> = ({ text, style }) => {
 
     return (
-        <Text variant="titleLarge" style={{...style, textAlign: 'center', color: '#27212B'}}>
+        <Text variant="headlineLarge" style={{...style, textAlign: 'center', color: '#27212B'}}>
             {text}
         </Text>
     );

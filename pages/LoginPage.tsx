@@ -1,6 +1,6 @@
 import { Button, Text, TextInput } from "react-native-paper";
 import { Image, View } from "react-native";
-import {CustomTitle} from "../utils/common-components";
+import {CustomSubtitle, CustomTitle} from "../utils/common-components";
 
 export default function LoginPage() {
   return (
@@ -10,12 +10,10 @@ export default function LoginPage() {
         style={{ alignSelf: "center" }}
       ></Image>
         <CustomTitle
-            style={{ marginTop: 76 }}
+            style={{ marginTop: 60 }}
             text="Seja bem-vindo"
         />
-      <Text variant="titleLarge" style={{ textAlign: "center", marginTop: 20 }}>
-        Faca login e comece a vender seus produtos agora mesmo.
-      </Text>
+      <CustomSubtitle text="Faca login e comece a vender seus produtos agora mesmo." style={{ marginTop: 20 }} />
 
       <View style={{ marginTop: 80 }}>
         <Text variant="labelMedium" style={{ color: "#939095" }}>
