@@ -1,6 +1,8 @@
 import { View ,StyleSheet } from "react-native";
 import { Button, Text, TextInput } from "react-native-paper";
-import {theme} from '../styles/theme';
+import {theme} from '../utils/styles/theme';
+import { CustomButton} from '../utils/common-components/';
+
 
 export default function SignInFormPage() {
   return (
@@ -9,6 +11,7 @@ export default function SignInFormPage() {
         variant="headlineSmall"
         style={{ marginBottom: 10, textAlign: "center" }}
       >
+      {/*<CompTextInput></CompTextInput>*/}
         Preencha o formulario
       </Text>
       <Text variant="labelSmall" style={{ marginTop: 10 }}>
@@ -116,6 +119,12 @@ export default function SignInFormPage() {
       >
         Continuar
       </Button>
+
+        <CustomButton mode='contained'
+                      onPress={() => console.log('Botão pressionado!')}
+                      texto='TESTE'
+        bgColor={theme.colors.primary}
+        />
     </View>
   );
 }
