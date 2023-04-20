@@ -1,29 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import LoginPage from "./pages/LoginPage";
-import ProfileSignInPage from "./pages/ProfileSignInPage";
+import {View} from 'react-native';
 import SignInFormPage from "./pages/SignInFormPage";
-import { useTheme, Provider as PaperProvider } from "react-native-paper";
+import {useTheme} from "react-native-paper";
+import {ThemeInitilizer} from './styles/ThemingProvider';
 
 
 export default function App() {
-  const theme = useTheme();
-  return (
-      <PaperProvider theme={theme}>
-        <View>
-          {/*<LoginPage />*/}
-          {/*<ProfileSignInPage />*/}
-          <SignInFormPage />
-        </View>
-      </PaperProvider>
-  );
-}
+    const theme = useTheme();
+    return (
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+        <ThemeInitilizer>
+            <View>
+                <SignInFormPage/>
+            </View>
+        </ThemeInitilizer>
+    );
+}

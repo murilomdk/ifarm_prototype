@@ -1,5 +1,6 @@
-import { View } from "react-native";
+import { View ,StyleSheet } from "react-native";
 import { Button, Text, TextInput } from "react-native-paper";
+import {theme} from '../styles/theme';
 
 export default function SignInFormPage() {
   return (
@@ -17,8 +18,8 @@ export default function SignInFormPage() {
         mode="outlined"
         activeOutlineColor="#63B453"
         style={{
-          backgroundColor: "#ffffff",
-          borderColor: "#D0D0D0",
+          backgroundColor: theme.colors.background,
+          borderColor: theme.colors.borderColor,
           borderRadius: 10,
         }}
       ></TextInput>
@@ -29,8 +30,8 @@ export default function SignInFormPage() {
         mode="outlined"
         activeOutlineColor="#63B453"
         style={{
-          backgroundColor: "#ffffff",
-          borderColor: "#D0D0D0",
+          backgroundColor: theme.colors.background,
+          borderColor: theme.colors.borderColor,
           borderRadius: 10,
         }}
       ></TextInput>
@@ -41,8 +42,8 @@ export default function SignInFormPage() {
         mode="outlined"
         activeOutlineColor="#63B453"
         style={{
-          backgroundColor: "#ffffff",
-          borderColor: "#D0D0D0",
+          backgroundColor: theme.colors.background,
+          borderColor: theme.colors.borderColor,
           borderRadius: 10,
         }}
       ></TextInput>
@@ -55,8 +56,8 @@ export default function SignInFormPage() {
             mode="outlined"
             activeOutlineColor="#63B453"
             style={{
-              backgroundColor: "#ffffff",
-              borderColor: "#D0D0D0",
+              backgroundColor: theme.colors.background,
+              borderColor: theme.colors.borderColor,
               borderRadius: 10,
             }}
           ></TextInput>
@@ -69,8 +70,8 @@ export default function SignInFormPage() {
             mode="outlined"
             activeOutlineColor="#63B453"
             style={{
-              backgroundColor: "#ffffff",
-              borderColor: "#D0D0D0",
+              backgroundColor: theme.colors.background,
+              borderColor: theme.colors.borderColor,
               borderRadius: 10,
             }}
           ></TextInput>
@@ -83,8 +84,8 @@ export default function SignInFormPage() {
         mode="outlined"
         activeOutlineColor="#63B453"
         style={{
-          backgroundColor: "#ffffff",
-          borderColor: "#D0D0D0",
+          backgroundColor: theme.colors.background,
+          borderColor: theme.colors.borderColor,
           borderRadius: 10,
         }}
       ></TextInput>
@@ -95,8 +96,8 @@ export default function SignInFormPage() {
         mode="outlined"
         activeOutlineColor="#63B453"
         style={{
-          backgroundColor: "#ffffff",
-          borderColor: "#D0D0D0",
+          backgroundColor: theme.colors.background,
+          borderColor: theme.colors.borderColor,
           borderRadius: 10,
         }}
       ></TextInput>
@@ -105,7 +106,7 @@ export default function SignInFormPage() {
           marginTop: 20,
           width: 144,
           alignSelf: "flex-end",
-          backgroundColor: "#63B453",
+          backgroundColor: theme.colors.background,
           borderRadius: 10,
         }}
         labelStyle={{
@@ -118,3 +119,4 @@ export default function SignInFormPage() {
     </View>
   );
 }
+
