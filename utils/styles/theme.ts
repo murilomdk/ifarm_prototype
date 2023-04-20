@@ -14,4 +14,13 @@ export const theme = {
         disabled: '#D0D0D0',
         error: '#f10505',
     },
+    size: {
+        xs: 4,
+        sm: 8,
+        md: 16,
+        lg: 24,
+        xl: 32,
+        xr: 40,
+        xm: 20,
+    }
 };

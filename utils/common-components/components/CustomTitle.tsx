@@ -3,7 +3,7 @@ import {Text} from "react-native-paper";
 
 interface Props {
     text: string;
-    style: {}
+    style?: {}
 }
 
 export const CustomTitle : React.FC<Props> = ({ text, style }) => {
