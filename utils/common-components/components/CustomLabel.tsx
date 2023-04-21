@@ -12,7 +12,7 @@ interface Props {
 }
 
 export const CustomLabel : React.FC<Props> = ({ text,
-                                                  variant = 'labelSmall',
+                                                  variant = 'labelMedium',
                                                   style,
                                                   color = theme.colors.textPrimary,
                                                   children}) => {

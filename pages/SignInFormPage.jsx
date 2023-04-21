@@ -1,6 +1,7 @@
 import { View } from "react-native";
 import {CustomButton, CustomLabel, CustomSubtitle} from '../utils/common-components/';
 import {CustomInput} from "../utils/common-components/components/CustomInput";
+import {theme} from "../utils/styles/theme";
 
 export default function SignInFormPage() {
   return (
@@ -8,7 +9,7 @@ export default function SignInFormPage() {
       <CustomSubtitle
           text="Preencha o formulário"
       />
-      <CustomLabel text="Nome" style={{ marginTop: 10 }} />
+        <CustomLabel color={theme.colors.textSecondary} text="Nome" style={{ marginTop: 10 }} />
         <CustomInput />
         <CustomLabel text="Como gostaria de ser chamado" style={{ marginTop: 10 }} />
         <CustomInput />
