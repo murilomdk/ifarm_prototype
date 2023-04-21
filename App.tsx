@@ -1,4 +1,4 @@
-import {View, StyleSheet, SafeAreaView, Platform, StatusBar} from 'react-native';
+import {StyleSheet, SafeAreaView, Platform, StatusBar} from 'react-native';
 import SignInFormPage from "./pages/SignInFormPage";
 import {useTheme} from "react-native-paper";
 import {ThemeInitilizer} from './utils/styles/ThemingProvider';
@@ -14,13 +14,11 @@ export default function App() {
 
         <ThemeInitilizer>
             <SafeAreaView style={styles.container}>
-            {/*    <View>*/}
-                    {/*<LoginPage />*/}
-                    {/*<SignInFormPage/>*/}
+            {/*        <LoginPage />*/}
+                    <SignInFormPage/>
+            {/*        <ProfileSignInPage />*/}
+                    {/*<NewNegotiationPage/>*/}
                     {/*<ProfileSignInPage />*/}
-                    <NewNegotiationPage/>
-                    {/*<ProfileSignInPage />*/}
-                {/*</View>*/}
             </SafeAreaView>
         </ThemeInitilizer>
     );
@@ -31,6 +29,6 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: theme.colors.background,
         paddingHorizontal: theme.size.md,
-        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 0,
+        paddingTop: Platform.OS === 'android' ? StatusBar.currentHeight : 20,
     }
 });
