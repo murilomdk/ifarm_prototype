@@ -12,7 +12,8 @@ export const CustomInput : React.FC<Props> = ({ disabled, style, placeholder}) =
 
     return (
         <TextInput placeholder={placeholder}
-                   mode="outlined" activeOutlineColor={theme.colors.primary}
+                   mode="outlined"
+                   activeOutlineColor={theme.colors.primary}
                    outlineStyle={{borderRadius: 10}}
                    editable={disabled}
                    style={{

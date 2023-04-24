@@ -6,7 +6,7 @@ import {Avatar, List, Switch} from "react-native-paper";
 
 export default function ProductSelection() {
     return (
-        <>
+        <View style={{paddingHorizontal: theme.size.md}}>
             <CustomSubtitle text="Fazenda Asa Branca"></CustomSubtitle>
             <CustomInput placeholder="Busque pelo nome do item" style={{marginTop: theme.size.lg}}/>
 
@@ -40,7 +40,7 @@ export default function ProductSelection() {
                     })}
                 </ScrollView>
             </View>
-        </>
+        </View>
     )
 }
 
