@@ -24,21 +24,25 @@ export default function App() {
             headerShown: false,
           }}>
             <Tab.Screen name="Início" component={ProfileSignInPage} options={{
+              tabBarActiveTintColor: theme.colors.primary,
               tabBarIcon: ({ color, size }) => (
-                  <MaterialCommunityIcons name="home" color={color} size={size} />
+                  <MaterialCommunityIcons name="home" color={color} size={size}/>
               )
             }} />
             <Tab.Screen name="Desempenho" component={ProfileSignInPage} options={{
+              tabBarActiveTintColor: theme.colors.primary,
               tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="speedometer" color={color} size={size} />
               )
             }} />
             <Tab.Screen name="Produtos" component={ProfileSignInPage} options={{
+              tabBarActiveTintColor: theme.colors.primary,
               tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="cart" color={color} size={size} />
               )
             }}/>
             <Tab.Screen name="Loja" component={ProfileSignInPage} options={{
+              tabBarActiveTintColor: theme.colors.primary,
              tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="storefront" color={color} size={size} />
               )
