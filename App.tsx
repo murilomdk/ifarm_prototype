@@ -6,6 +6,7 @@ import ProfileSignInPage from "./pages/ProfileSignInPage";
 import NewNegotiationPage from "./pages/NewNegotiation";
 import LoginPage from "./pages/LoginPage";
 import {theme} from "./utils/styles/theme";
+import ProductSelection from "./pages/ProductSelection";
 
 
 export default function App() {
@@ -15,10 +16,11 @@ export default function App() {
         <ThemeInitilizer>
             <SafeAreaView style={styles.container}>
             {/*        <LoginPage />*/}
-                    <SignInFormPage/>
+            {/*        <SignInFormPage/>*/}
             {/*        <ProfileSignInPage />*/}
                     {/*<NewNegotiationPage/>*/}
                     {/*<ProfileSignInPage />*/}
+                <ProductSelection />
             </SafeAreaView>
         </ThemeInitilizer>
     );
