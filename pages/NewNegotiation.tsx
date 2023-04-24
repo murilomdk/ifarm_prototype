@@ -21,7 +21,7 @@ export default function NewNegotiationPage() {
 
     const createIcon = (item: any) => {
         return (
-            <View style={styles.container}>
+            <View style={styles.iconContainer}>
                 <Svg width="40" height="40" viewBox="0 0 40 40" fill="none">
                     <G clip-path="url(#clip0_36_358)">
                         <Path
@@ -75,7 +75,8 @@ export default function NewNegotiationPage() {
             borderColor: theme.colors.primary,
             borderWidth: 1
         },
-        container: {
+        iconContainer: {
+            paddingHorizontal: theme.size.md,
             justifyContent: 'center',
             alignItems: 'center',
         },
@@ -87,7 +88,7 @@ export default function NewNegotiationPage() {
 
 
     return (<>
-        <View>
+        <View style={{paddingHorizontal: theme.size.md}}>
             <CustomTitle
                 style={{marginTop: theme.size.lg}}
                 variant={'titleMedium'}
