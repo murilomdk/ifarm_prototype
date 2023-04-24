@@ -30,10 +30,16 @@ export const ThemeInitilizer: React.FC<{ theme?: any; children: any; }> = (props
     );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center'
     },
+
+    itemPic: {
+        height: 50,
+        width: 50,
+        borderRadius: 10
+    }
 });

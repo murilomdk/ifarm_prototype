@@ -26,6 +26,7 @@ export default function LoginPage() {
           }} />
           <CustomButton mode="contained-tonal" onPress={action} text="Entrar" style={{
               marginTop: 20,
+              minWidth: '100%'
           }} />
           <CustomLabel text="Cadastrar-se" style={{marginTop: 10, textAlign: 'center'}}/>
         <CustomLabel

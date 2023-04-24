@@ -7,10 +7,7 @@ import {theme} from "../utils/styles/theme";
 export default function NewNegotiationPage() {
     return (<>
         <View>
-
-
             <CustomTitle text={'Cadastro de Negociação'} />
-
         </View>
     </>)
 }
