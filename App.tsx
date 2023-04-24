@@ -7,6 +7,7 @@ import NewNegotiationPage from "./pages/NewNegotiation";
 import LoginPage from "./pages/LoginPage";
 import {theme} from "./utils/styles/theme";
 import ProductSelection from "./pages/ProductSelection";
+import PropertySelection from "./pages/PropertySelection";
 
 
 export default function App() {
@@ -20,7 +21,8 @@ export default function App() {
             {/*        <ProfileSignInPage />*/}
                     {/*<NewNegotiationPage/>*/}
                     {/*<ProfileSignInPage />*/}
-                <ProductSelection />
+                {/*<ProductSelection />*/}
+                <PropertySelection />
             </SafeAreaView>
         </ThemeInitilizer>
     );
