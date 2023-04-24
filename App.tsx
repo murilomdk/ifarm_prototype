@@ -11,6 +11,7 @@ import PropertySelection from "./pages/PropertySelection";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import ProductSelection from "./pages/ProductSelection";
 
 const Tab = createBottomTabNavigator();
 
@@ -23,7 +24,7 @@ export default function App() {
           <Tab.Navigator sceneContainerStyle={{ backgroundColor: 'white'}} screenOptions={{
             headerShown: false,
           }}>
-            <Tab.Screen name="Início" component={ProfileSignInPage} options={{
+            <Tab.Screen name="Início" component={LoginPage} options={{
               tabBarActiveTintColor: theme.colors.primary,
               tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="home" color={color} size={size}/>
@@ -35,7 +36,7 @@ export default function App() {
                   <MaterialCommunityIcons name="speedometer" color={color} size={size} />
               )
             }} />
-            <Tab.Screen name="Produtos" component={ProfileSignInPage} options={{
+            <Tab.Screen name="Produtos" component={ProductSelection} options={{
               tabBarActiveTintColor: theme.colors.primary,
               tabBarIcon: ({ color, size }) => (
                   <MaterialCommunityIcons name="cart" color={color} size={size} />
