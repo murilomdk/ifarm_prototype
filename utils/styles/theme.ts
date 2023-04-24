@@ -22,6 +22,6 @@ export const theme = {
         lg: 24,
         xl: 32,
         xr: 40,
-        xm: 20,
+        xm: 60,
     }
 };
