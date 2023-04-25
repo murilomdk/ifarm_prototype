@@ -6,13 +6,15 @@ interface Props {
     mode: 'contained' | 'contained-tonal' | 'outlined';
     onPress: () => void;
     text: string;
+    disabled?: boolean;
     style?: {}
 }
 
-export const CustomButton: React.FC<Props> = ({ mode = 'contained', onPress, text, style}) => {
+export const CustomButton: React.FC<Props> = ({ mode = 'contained', onPress, text, disabled = false, style}) => {
 
     return (
         <Button mode={mode}
+                disabled={disabled}
                 onPress={onPress}
                 style={{...style,
                     backgroundColor: theme.colors.primary,
